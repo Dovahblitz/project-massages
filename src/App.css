@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: blue;
 }
 
 .App-link {
@@ -35,4 +35,294 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/*FONTS*/
+@font-face {
+  font-family: "Work-Sans";
+  src: local("Work sans"),
+  url("./font/WorkSans-Regular.ttf") format("truetype");
+
+}
+
+/*HEADER*/
+
+.header-nav{
+  background-image: url("../img/relax-header.jpg");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 1%;
+  font-family: 'Work-Sans';
+  font-weight: bold;
+  
+}
+
+.header-nav h1{
+  color: white;
+}
+.list1{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 1%;
+}
+
+.list1 a{
+  text-decoration: none;
+  color: black;
+  border: solid 2px;
+  padding: 1%;
+  border-radius: 10px;
+  background-color: white;
+  
+}
+
+.list2{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-right: 1%;
+  
+
+}
+
+.list2 a{
+  text-decoration: none;
+  color: white;
+}
+
+/*FORMULAIRES*/
+
+input[type=text]{
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=email]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+input[type=submit]{
+  background-color: #04AA6D;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* HOMEPAGE */
+
+.home-text p{
+  font-size: 25px;
+}
+
+.home-text a{
+  text-decoration: none;
+  font-family: 'Work-Sans';
+  font-weight: bold;
+  color: #603B23;
+  
+}
+
+.catalog{
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.connect{
+  padding: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.account{
+  padding: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact{
+  padding: 5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* IMAGES HOMEPAGE */
+
+.img-right{
+  float: right;
+  width: 500px;
+  border-radius: 10px;
+  
+  
+  
+}
+
+.img-left{
+  float: left;
+  width: 500px;
+  border-radius: 10px;
+}
+
+
+
+/*PAGE ABOUT*/
+.candlepic{
+  float: right;
+  width: 50%;
+}
+
+.about{
+  display: flex;
+  padding: 3%;
+}
+
+.about p{
+  text-align: center;
+}
+
+/* PAGE PRODUITS */
+
+.item-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.card{
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.card h3{
+  font-family: 'Work-Sans';
+}
+
+.buttonproduct{
+  border: solid;
+  color: black;
+  border-width: thin;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 2%;
+}
+
+.buttonproduct:hover {
+  font-weight: bold;
+}
+
+/* DETAILS PRODUITS */
+
+.producttitle{
+  font-family: 'Work-Sans';
+}
+
+.item-detail{
+  text-align: center;
+  padding: 2%;
+  margin: 2%;
+  justify-content: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.productdescription{
+  line-height: 200%;
+}
+
+.card-detail a {
+  text-decoration: none;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
+  padding: 1%;
+  margin-top: 3%;
+  color: black;
+}
+
+.buttonbooking:hover{
+ font-weight: bold;
+ 
+}
+
+.productduration{
+  margin-bottom: 3%;
+}
+
+/* PAGE BOOKING */
+
+.booking-form{
+  padding: 2%;
+}
+
+
+
+.booking-options{
+  
+  width: 100%;
+ 
+}
+
+#massage-name{
+  padding: 1%;
+  margin: 1%;
+  
+}
+
+.bookingdate{
+  padding: 1%;
+  margin: 1%;
+}
+
+.bookinghour{
+  padding: 1%;
+  margin: 1%;
+}
+
+/* FOOTER */
+
+.footer{
+  background-color: #948067;
+  border-top:2px solid #603B23;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: white;
 }
